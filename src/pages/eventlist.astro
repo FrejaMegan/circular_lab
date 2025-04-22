@@ -4,22 +4,10 @@ import { redirectToDefaultLocale } from "astro:i18n";
 
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
-import Hero from "../components/Hero.astro";
-import Info from "../components/Info.astro";
-import Events from "../components/Events.astro";
-
+import ListView from "../components/ListView.astro";
 import Footer from "../components/Footer.astro";
 
 const url = "https://qsrakwuccdmdnlksroom.supabase.co";
 const key =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFzcmFrd3VjY2RtZG5sa3Nyb29tIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDQzNTI4OTEsImV4cCI6MjA1OTkyODg5MX0.qIfMopi9QPFgYQY-eW9K9WdrSVt7vDRFb_ZBN7sZuCU";
 ---
-
-<Layout>
-  <Header />
-  <Hero />
-  <Info />
-  <Events />
-  <ListView />
-  <Footer />
-</Layout>
