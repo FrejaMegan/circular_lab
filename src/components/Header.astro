@@ -1,0 +1,146 @@
+---
+
+---
+
+<header class="header">
+  <!-- Top bar -->
+  <div class="topbar">
+    <ul class="nav-list1">
+      <li><a href="#">Find din udannelse</a></li>
+      <li><a href="#">Serviceportal</a></li>
+      <li><a href="#">Itslearning</a></li>
+      <li><a href="#">Bibliotek</a></li>
+    </ul>
+  </div>
+
+  <!-- Main header -->
+  <div class="main-header">
+    <!-- Logo -->
+    <a href="/" class="logo">
+      <img src="/logo_kea.svg" alt="KEA logo" class="logo-desktop" />
+    </a>
+
+    <!-- Desktop nav -->
+    <nav class="nav-desktop">
+      <ul class="nav-list2">
+        <li><a href="#">Studiehåndbog</a></li>
+        <li><a href="#">Vejledning og støtte</a></li>
+        <li><a href="#">Praktik</a></li>
+        <li><a href="#">Internationale muligheder</a></li>
+        <li><a href="#">Studieliv og Faciliteter</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="lang-btn">EN</button>
+        <button class="search-btn">🔍</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<style>
+  /* Topbar */
+  .topbar {
+    background-color: #c8d0d8; 
+    padding: 0.25rem 1rem;
+    font-size: 0.875rem;
+    color: #233249; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    height: 32px;
+  }
+
+  .nav-list1 {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-list1 a {
+    color: #233249;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .nav-list1 a:hover {
+    text-decoration: underline;
+  }
+
+  /* Main header */
+  .main-header {
+    background-color: #233249;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+
+  /* Logo */
+  .logo {
+    display: flex;
+  }
+
+  .logo-desktop {
+    height: 6.50rem;
+  }
+
+  /* Desktop nav */
+  .nav-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1f2937;
+
+}
+
+  .nav-list2 {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding-right: 1rem
+  }
+
+  .nav-list2 a {
+    color: #ededed;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .nav-list2 a:hover {
+    text-decoration: underline;
+  }
+
+  .nav-actions {
+    display: flex;
+    margin-left: 2rem;
+  }
+
+  .lang-btn {
+    background: white;
+    color: #e74c3c;
+    font-weight: bold;
+    padding: 2.6rem 2rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    border: none;
+  }
+
+  .search-btn {
+    background: #e74c3c;
+    color: white;
+    padding: 2.6rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+</style>
