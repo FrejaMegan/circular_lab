@@ -8,7 +8,7 @@ const { events } = Astro.props;
     Array.isArray(events) && events.length > 0 ? (
       events.map((event) => (
         <div class="event-card">
-          <img src="/public/event_2.svg" alt="Event" class="event-image" />
+          <img src="/event_2.svg" alt="Event" class="event-image" />
           <div class="event-info">
             <h3>
               {new Date(event.event_date).toLocaleString("da-DK", {
