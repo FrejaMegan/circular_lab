@@ -1,0 +1,80 @@
+---
+// EventList.astro
+const { events } = Astro.props;
+---
+
+<div class="event-list">
+  {
+    Array.isArray(events) && events.length > 0 ? (
+      events.map((event) => (
+        <div class="event-card">
+          <img src="/public/event_2.svg" alt="Event" class="event-image" />
+          <div class="event-info">
+            <h3>
+              {new Date(event.event_date).toLocaleString("da-DK", {
+                month: "long",
+                year: "numeric",
+              })}
+            </h3>
+            <h2>{event.event_title}</h2>
+            <p>
+              <>
+                <span>
+                  {new Date(event.event_date).toLocaleDateString("da-DK")}
+                </span>
+                <br />
+              </>
+              {event.event_start} - {event.event_end}
+              <br />
+              <span>{event.event_location}</span>
+            </p>
+            <p>{event.event_description}</p>
+          </div>
+        </div>
+      ))
+    ) : (
+      <p>Ingen events fundet.</p>
+    )
+  }
+</div>
+
+<style>
+  .event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .event-card {
+    display: flex;
+    border: 3px solid #0078d4;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .event-image {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .event-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event-info h2 {
+    margin: 0.5rem 0;
+    color: #333;
+  }
+
+  .event-info h3 {
+    margin: 0;
+    color: #0078d4;
+    font-size: 1.1rem;
+  }
+</style>
